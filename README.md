@@ -46,15 +46,15 @@ people have the same name.)
 Install the module as follows:
 
 ```sh
-npm i moCHnames
+npm i mock-ch-names
 # or
-yarn add moCHnames
+yarn add mock-ch-names
 ```
 
 Use as follows to get a mock person from anywhere in Switzerland:
 
 ```typescript
-import { mockNameLocation } from "moCHnames";
+import { mockNameLocation } from "mock-ch-names";
 
 console.log(mockNameLocation());
 ```
@@ -72,6 +72,8 @@ Possible output:
   canton: 'GR'
 }
 ```
+(If the town name in the postal database does not end in the canton's
+abbreviation, `town` and `townNoCanton` are identical.)
 
 To only get mock people from a particular canton, pass the canton's two-letter
 abbreviation (e.g., `SH`) as an optional parameter to `mockNameLocation()`.

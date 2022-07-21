@@ -1,10 +1,10 @@
 {
   "name": "mock-ch-names",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create mock Swiss names together with an appropriate location",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/MarcelWaldvogel/moCHnames",
+  "repository": "https://github.com/MarcelWaldvogel/mock-ch-names",
   "author": "Marcel Waldvogel <marcel.waldvogel@trifence.ch>",
   "license": "MIT",
   "private": false,
