@@ -1,5 +1,43 @@
 # Swiss Mock names
 
+## Quickstart: JavaScript/TypeScript API
+
+Install the module as follows:
+
+```sh
+npm i mock-ch-names
+# or
+yarn add mock-ch-names
+```
+
+Use as follows to get a mock person from anywhere in Switzerland:
+
+```typescript
+import { mockNameLocation } from "mock-ch-names";
+
+console.log(mockNameLocation());
+```
+
+Possible output:
+
+```typescript
+{
+  first: 'Martin',
+  last: 'Meier',
+  gender: 'm',
+  plz: '7208',
+  town: 'Malans GR',
+  townNoCanton: 'Malans',
+  canton: 'GR'
+}
+```
+
+(If the town name in the postal database does not end in the canton's
+abbreviation, `town` and `townNoCanton` are identical.)
+
+To only get mock people from a particular canton, pass the canton's two-letter
+abbreviation (e.g., `SH`) as an optional parameter to `mockNameLocation()`.
+
 ## Data sources
 
 This database of mock Swiss names is based on the following data:
@@ -40,40 +78,3 @@ have at least one male/female first/last name each, will be filtered out. (E.g.
 "8261 Hemishofen" is missing, because the raw data does not contain any female
 first names. The raw files include name information only, when more than five
 people have the same name.)
-
-### JavaScript/TypeScript API
-
-Install the module as follows:
-
-```sh
-npm i mock-ch-names
-# or
-yarn add mock-ch-names
-```
-
-Use as follows to get a mock person from anywhere in Switzerland:
-
-```typescript
-import { mockNameLocation } from "mock-ch-names";
-
-console.log(mockNameLocation());
-```
-
-Possible output:
-
-```typescript
-{
-  first: 'Martin',
-  last: 'Meier',
-  gender: 'm',
-  plz: '7208',
-  town: 'Malans GR',
-  townNoCanton: 'Malans',
-  canton: 'GR'
-}
-```
-(If the town name in the postal database does not end in the canton's
-abbreviation, `town` and `townNoCanton` are identical.)
-
-To only get mock people from a particular canton, pass the canton's two-letter
-abbreviation (e.g., `SH`) as an optional parameter to `mockNameLocation()`.
