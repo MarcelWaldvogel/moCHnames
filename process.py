@@ -25,4 +25,7 @@ for plz in sorted(plzmap.keys()):
     sortedmap[plz] = plzmap[plz]
 
 with open("data/plz.json", "w") as out:
-    json.dump(sortedmap, out)
+    json.dump(sortedmap, out, separators=(',', ':'))
+
+with open("data/name.json", "w") as out:
+    json.dump(sortedmap, out, separators=(',', ':'))
