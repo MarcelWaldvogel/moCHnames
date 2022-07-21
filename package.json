@@ -1,0 +1,10 @@
+{
+  "name": "moCHnames",
+  "version": "0.0.1",
+  "description": "Create mock Swiss names together with an appropriate location",
+  "main": "dist/index.js",
+  "repository": " ",
+  "author": "Marcel Waldvogel <marcel.waldvogel@trifence.ch>",
+  "license": "MIT",
+  "private": true
+}
