@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "Create mock Swiss names together with an appropriate location",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": " ",
   "author": "Marcel Waldvogel <marcel.waldvogel@trifence.ch>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
