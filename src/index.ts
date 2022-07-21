@@ -106,6 +106,9 @@ function removeTrailingCanton(town: string, canton: Canton) {
 export function mockNameLocation(canton?: Canton): NameLocation {
   const names = canton === undefined ? nameMap : cantonNameMap(canton);
   const plzs = Object.keys(names);
+  if (plzs.length === 0) {
+    throw new Error(`No names for invalid canton ${canton}`);
+  }
   const plz = pickRandom(plzs);
   const record = names[plz];
   const gender: Gender = pickRandom(["f", "m"]);
