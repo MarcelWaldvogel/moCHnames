@@ -1,5 +1,5 @@
 {
-  "name": "moCHnames",
+  "name": "mock-ch-names",
   "version": "0.0.1",
   "description": "Create mock Swiss names together with an appropriate location",
   "main": "dist/index.js",
